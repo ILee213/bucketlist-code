@@ -32,24 +32,12 @@ mongoose.connect('mongodb+srv://irischanvy08:RGRTOduyTi1JmtmV@bestiesbucketlist.
     })
 
 
-
 /*
 app.listen(4000, () => {
     console.log('listening on port 4000!!')
 })
 */
 
-//tester connect to db
-
-
-
-
-
-/*
-app.get('/', (req, res) => {
-    res.json({mssg: 'Welcome to the app'})
-})
-*/
 
 // listen for requests
 //attempt at using env variables
@@ -58,6 +46,3 @@ app.listen(process.env.PORT, () => {
     console.log('listening on port', process.env.PORT)
 })
 */
-
-
-//tester for git
