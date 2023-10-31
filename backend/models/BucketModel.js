@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
-
 //must modify later to fit my own project
 const bucketSchema = new Schema({
     title: {

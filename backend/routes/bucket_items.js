@@ -5,7 +5,7 @@ const{
     getBucket,
     deleteBucket,
     updateBucket
-}= require('../controllers/bucketController')
+} = require('../controllers/bucketController')
 
 const router = express.Router()
 
