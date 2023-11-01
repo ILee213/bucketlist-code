@@ -4,15 +4,15 @@ const Schema = mongoose.Schema
 
 //must modify later to fit my own project
 const bucketSchema = new Schema({
-    title: {
+    activity: {
         type: String,
         require: true
     },
-    reps: {
+    attendees: {
         type: Number,
         required: true
     },
-    load: {
+    priority: {
         type: Number,
         required:true
     }

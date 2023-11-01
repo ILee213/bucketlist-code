@@ -28,11 +28,11 @@ const getBucket = async(req, res) => {
 
 //create new bucket
 const createBucket = async(req, res) => {
-    const {title, reps, load} = req.body
+    const {activity, attendees, priority} = req.body
 
     //add doc to db
     try {
-        const bucket = await Bucket.create({title, reps, load})
+        const bucket = await Bucket.create({activity, attendees, priority})
         res.status(200).json(bucket)
     }catch(error) {
         res.status(400).json({error: error.message})
