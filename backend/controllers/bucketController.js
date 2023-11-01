@@ -1,4 +1,4 @@
-const BucketModel = require('../models/BucketModel')
+
 const Bucket = require('../models/BucketModel')
 const mongoose = require('mongoose')
 
@@ -34,7 +34,7 @@ const createBucket = async(req, res) => {
     try {
         const bucket = await Bucket.create({activity, attendees, priority})
         res.status(200).json(bucket)
-    }catch(error) {
+    } catch(error) {
         res.status(400).json({error: error.message})
     }
 }
