@@ -28,11 +28,11 @@ const getBucket = async(req, res) => {
 
 //create new bucket
 const createBucket = async(req, res) => {
-    const {activity, attendees, priority} = req.body
+    const {activity, attendees, priority, date, creator, location} = req.body
 
     //add doc to db
     try {
-        const bucket = await Bucket.create({activity, attendees, priority})
+        const bucket = await Bucket.create({activity, attendees, priority, date, creator, location})
         res.status(200).json(bucket)
     } catch(error) {
         res.status(400).json({error: error.message})
@@ -76,6 +76,10 @@ const updateBucket = async(req, res) => {
 
     res.status(200).json(bucket)
 
+}
+
+const getBucketsInDate = async(req, res) => {
+    
 }
 
 

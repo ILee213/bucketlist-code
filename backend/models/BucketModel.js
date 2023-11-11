@@ -15,6 +15,18 @@ const bucketSchema = new Schema({
     priority: {
         type: Number,
         required:true
+    },
+    date: {
+        type: String,
+        required: true
+    },
+    creator: {
+        type: String,
+        required: true
+    },
+    location: {
+        type: String,
+        required: true
     }
 }, { timestamps: true })
 
